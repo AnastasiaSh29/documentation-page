@@ -1,0 +1,22 @@
+.list
+    list-style-type: none
+    margin: 0
+    padding: 0 10px 0 10px
+    font-size: 20px
+    font-weight: bold
+
+    &__item
+        border-bottom: 2px solid $details-color
+        padding: 10px 0 10px 0
+        &:first-of-type
+            border-top: 2px solid $details-color
+        &:last-of-type
+            border-bottom: none
+
+    &__anchor
+        text-decoration: none
+        color: $font-color-primary
+        display: block
+
+    &__anchor:hover
+        color: $details-color
